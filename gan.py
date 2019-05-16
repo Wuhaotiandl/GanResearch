@@ -135,7 +135,7 @@ class GAN():
             # ---------------------
             #  Train Generator
             # ---------------------
-
+            # 对于Gan网络的疑惑在于，它是个无监督的学习，那么生成器是如何一步步接近于生成准确图片的？
             noise = np.random.normal(0, 1, (batch_size, self.latent_dim))
 
             # Train the generator (to have the discriminator label samples as valid)
